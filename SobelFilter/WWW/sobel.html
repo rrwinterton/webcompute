@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>WASM sobel filter</title>
+</head>
+
+<body>
+    <script type="text/javascript"></script>
+    <input type="file" id="file1" name="inputFile" accept=".jpeg, .jpg, .png, .tif">
+    <input type="file" id="file2" name="inputFile" accept=".jpeg, .jpg, .png, .tif">
+    <br>
+    <br>
+    <canvas id="originalCanvas"></canvas>
+    <canvas id="sobelCanvas"></canvas>
+    <br>
+    <script type="text/javascript">
+
+        var Module = {
+            onRuntimeInitialized: function () {
+                run();
+            }
+        };
+    </script>
+    <script type="text/javascript" src="sobel.js"></script>
+    <script type="text/javascript" src="sobelFilter.js"></script>
+</body>
+
+</html>

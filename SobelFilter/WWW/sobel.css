@@ -1,0 +1,29 @@
+        
+        .time {
+            flex-grow: 1;
+        }
+
+        #filter1 {
+            border-right: 0.125vw black groove;
+        }
+
+        #filter2 {
+            border-left: 0.125vw black groove;
+        }
+
+        .filter {
+            float: left;
+            width: 49.5%;
+            margin-bottom: 50px;
+            display: flex;
+        }
+
+        .filter,
+        .filter>div {
+            height: 100px;
+        }
+
+        .container {
+            width: 50%;
+            margin-left: 10px;
+        }
